@@ -1,3 +1,5 @@
+/* #region STYLES ==================================================================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
@@ -16,30 +18,63 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
+
+.container {
+  width: 1270px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+
+  outline: 1px solid tomato;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 94.9%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #000000;
+}
+/* #endregion STYLES ==================================================================== */
 
 /* #region HEADER ==================================================================== */
 
-.site-header {
-  position: fixed;
-  width: 100vw;
+.header-site {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  padding: 64px 0;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 64px 100px;
 }
 
-.logo {
+.header-logo {
   width: 65px;
   height: 65px;
 }
 
-.menu-list {
+.header-menu-list {
   display: flex;
   align-items: center;
   gap: 56px;
+}
+
+.header-menu-link {
+  font-size: 18px;
+  line-height: 96.9%;
+
+  color: #000000;
 }
 
 .menu-btn {
@@ -55,21 +90,29 @@ img {
 
 /* #region SECTION HERO ==================================================================== */
 
-.hero {
-  width: 100vw;
-  height: 100vh;
-
+.hero-section {
   background-color: #f1fdff;
-  background-image: url("../images/hero-bg.png");
+
+  padding-bottom: 69px;
+}
+
+.hero-prapor {
+  width: 1440px;
+  background-image: url("../images/hero-bgr.png"), url("../images/hero-bg.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  /* background-size: contain; */
 
+  margin: 0 auto;
+}
+
+.hero-container {
   padding-top: 200px;
-  padding-left: 100px;
+
   padding-bottom: 150px;
 }
-.hero h1 {
+
+.hero-title {
   width: 700px;
   font-weight: 800;
   font-size: 93px;
@@ -80,7 +123,7 @@ img {
   color: #9ad2de;
 }
 
-.hero p {
+.hero-text {
   width: 484px;
   font-weight: 400;
   font-size: 20px;
@@ -92,3 +135,239 @@ img {
 }
 
 /* #endregion SECTION HERO ==================================================================== */
+
+/* #region SECTION WIN ==================================================================== */
+
+.win-section {
+  padding-top: 143px;
+  padding-bottom: 47px;
+}
+
+.win-container {
+}
+
+.win-title {
+}
+.win-text {
+  font-size: 27px;
+  line-height: 96.9%;
+  text-align: center;
+
+  max-width: 740px;
+
+  color: #000000;
+
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.win-subtext {
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+
+  max-width: 588px;
+
+  color: #73a6b1;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 72px;
+}
+.win-item {
+  background-color: #f1fdff;
+  border-radius: 10px;
+
+  padding: 40px 40px 70px;
+}
+
+.win-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.win-item-title {
+  font-size: 46px;
+  line-height: 94.9%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.win-item-text {
+  font-size: 20px;
+  line-height: 96.9%;
+
+  color: #000000;
+
+  margin-top: 10px;
+}
+
+.win-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 45px;
+}
+
+.win-wrap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.win-wrap-text {
+  font-size: 16px;
+  line-height: 96.9%;
+
+  color: #000000;
+}
+
+.win-wrap-time {
+  font-size: 16px;
+  line-height: 96.9%;
+
+  color: #3d8c9d;
+
+  margin-top: 10px;
+}
+
+.win-wrap-img {
+  border-radius: 10px;
+}
+
+/* #endregion SECTION WIN ==================================================================== */
+
+/* #region SECTION PRIZE ==================================================================== */
+
+.prize-section {
+  display: flex;
+  align-items: center;
+
+  background-image: url("../images/prize-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 270px 18px 191px 28px;
+}
+
+.prize-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 240px;
+
+  background-color: #f2feff;
+  border-radius: 10px;
+  height: 277px;
+}
+
+.prize-text {
+  font-size: 27.271px;
+  line-height: 120%;
+
+  color: #000000;
+  margin-left: 40px;
+}
+
+.prize-img {
+  margin-right: 137px;
+}
+
+/* #endregion SECTION PRIZE ==================================================================== */
+
+/* #region SECTION WAY ==================================================================== */
+
+.way-section {
+  padding-top: 68px;
+  padding-bottom: 146px;
+}
+
+.way-container {
+  width: 740px;
+  margin: 0 auto;
+}
+
+.way-text {
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+
+  color: #73a6b1;
+
+  margin-top: 20px;
+}
+
+.way-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #endregion SECTION WAY ==================================================================== */
+
+/* #region FOOTER ==================================================================== */
+
+.footer-site {
+  width: 1470px;
+  background-color: #f9fadf;
+
+  background-image: url("../images/footer-bg.png");
+  background-repeat: no-repeat;
+
+  padding-top: 57px;
+  padding-bottom: 116px;
+  margin: 0 auto;
+}
+
+.footer-container {
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 258px;
+
+  margin-bottom: 101px;
+}
+
+.footer-title {
+}
+
+.footer-contacts-wrap {
+}
+
+.footer-text {
+}
+
+.footer-form-wrap {
+  display: flex;
+  gap: 89px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  padding: 45px 68px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form-text {
+  font-size: 27px;
+  line-height: 120%;
+
+  color: #000000;
+
+  margin-bottom: 39px;
+}
+
+.footer-form-input {
+  height: 66px;
+
+  background-color: #f9fadf;
+  border-radius: 61px;
+  border: none;
+
+  margin-bottom: 31px;
+}
+/* #endregion FOOOTER ==================================================================== */
