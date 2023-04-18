@@ -26,8 +26,6 @@ img {
 
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: 1px solid tomato;
 }
 
 .title {
@@ -41,6 +39,11 @@ img {
 
   color: #000000;
 }
+
+.btn {
+  margin: 0 auto;
+}
+
 /* #endregion STYLES ==================================================================== */
 
 /* #region HEADER ==================================================================== */
@@ -57,6 +60,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-width: 1440px;
+
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -68,6 +76,8 @@ img {
   display: flex;
   align-items: center;
   gap: 56px;
+
+  margin-right: 84px;
 }
 
 .header-menu-link {
@@ -78,10 +88,16 @@ img {
 }
 
 .menu-btn {
+  font-size: 18px;
+  line-height: 120%;
   text-transform: uppercase;
+  text-align: center;
+
+  color: #000000;
 
   background-color: #7ae5fd;
   border-radius: 88px;
+  border: none;
 
   padding: 20px 28px;
 }
@@ -91,25 +107,21 @@ img {
 /* #region SECTION HERO ==================================================================== */
 
 .hero-section {
-  background-color: #f1fdff;
+  max-width: 1440px;
 
+  padding: 0 15px;
   padding-bottom: 69px;
-}
-
-.hero-prapor {
-  width: 1440px;
-  background-image: url("../images/hero-bgr.png"), url("../images/hero-bg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  /* background-size: contain; */
-
   margin: 0 auto;
 }
 
 .hero-container {
-  padding-top: 200px;
+  position: relative;
+  max-width: 1440px;
 
-  padding-bottom: 150px;
+  background-color: #f1fdff;
+
+  padding-top: 200px;
+  padding-bottom: 155px;
 }
 
 .hero-title {
@@ -134,6 +146,20 @@ img {
   margin-top: 64px;
 }
 
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
 /* #endregion SECTION HERO ==================================================================== */
 
 /* #region SECTION WIN ==================================================================== */
@@ -144,10 +170,10 @@ img {
 }
 
 .win-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.win-title {
-}
 .win-text {
   font-size: 27px;
   line-height: 96.9%;
@@ -160,6 +186,7 @@ img {
   margin: 0 auto;
   margin-top: 10px;
 }
+
 .win-subtext {
   font-size: 20px;
   line-height: 120%;
@@ -173,6 +200,7 @@ img {
   margin-top: 20px;
   margin-bottom: 72px;
 }
+
 .win-item {
   background-color: #f1fdff;
   border-radius: 10px;
@@ -182,6 +210,10 @@ img {
 
 .win-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.win-item:last-child {
+  margin-bottom: 60px;
 }
 
 .win-item-title {
@@ -297,6 +329,32 @@ img {
   margin-top: 20px;
 }
 
+.way-text-meta {
+  font-size: 27px;
+  line-height: 96.9%;
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 77px;
+}
+
+.way-text-count {
+  font-size: 60px;
+  line-height: 94.9%;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 25px;
+  margin-bottom: 67px;
+}
+
+.way-text-span {
+  color: #9ad2de;
+}
+
 .way-wrap {
   display: flex;
   flex-direction: column;
@@ -307,15 +365,24 @@ img {
 /* #region FOOTER ==================================================================== */
 
 .footer-site {
+  position: relative;
+  z-index: 3;
   width: 1470px;
   background-color: #f9fadf;
 
-  background-image: url("../images/footer-bg.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../images/footer-bg.png");
+  background-repeat: no-repeat; */
 
   padding-top: 57px;
   padding-bottom: 116px;
   margin: 0 auto;
+}
+
+.footer-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .footer-container {
@@ -324,6 +391,8 @@ img {
 .footer-contacts {
   display: flex;
   gap: 258px;
+
+  width: 1038px;
 
   margin-bottom: 101px;
 }
@@ -334,7 +403,30 @@ img {
 .footer-contacts-wrap {
 }
 
+.footer-icon {
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-right: 16px;
+}
+
+.footer-link {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #000000;
+}
+
 .footer-text {
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #000000;
+}
+
+.footer-text:not(:last-child) {
+  margin-bottom: 57px;
 }
 
 .footer-form-wrap {
@@ -364,10 +456,15 @@ img {
 .footer-form-input {
   height: 66px;
 
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #000000;
   background-color: #f9fadf;
   border-radius: 61px;
   border: none;
 
+  padding: 21px 43px;
   margin-bottom: 31px;
 }
 /* #endregion FOOOTER ==================================================================== */

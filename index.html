@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header-site">
-      <div class="container header-container">
+      <div class="header-container">
         <a href="./index.html">
           <img src="./images/subtract.svg" class="header-logo" />
         </a>
@@ -36,14 +36,16 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-prapor">
-          <div class="container hero-container">
-            <h1 class="hero-title">Фестиваль Перемоги України</h1>
-            <p class="hero-text">
-              Свято для усіх українців, які працювали, боролися й вірили у перемогу
-            </p>
+          <div class="hero-container">
+            <div>
+              <h1 class="hero-title">Фестиваль Перемоги України</h1>
+              <p class="hero-text">
+                Свято для усіх українців, які працювали, боролися й вірили у перемогу
+              </p>
+            </div>
+            <img class="hero-img" src="./images/hero-bg.png" alt="Дівчина з прапором" width="1015" height="729">
+            <img class="hero-bg" src="./images/hero-bgr.png" alt="Декор сторінки">
           </div>
-        </div>
       </section>
       <section class="win-section">
         <div class="container win-container">
@@ -160,7 +162,7 @@
               </div>
             </li>
           </ul>
-          <a class="menu-btn" href="#">Дізнатися більше</a>
+          <button class="menu-btn btn" type="button">Дізнатися більше</button>
         </div>
       </section>
       <section class="prize-section">
@@ -176,11 +178,9 @@
           <h2 class="way-title title">Як потрапити</h2>
           <p class="way-text">Фестиваль безкоштовний. Будемо збирати пожертви для відбудови зруйнованих українських міст та сіл.</p>
           <div class="way-wrap">
-            <p>Наша мета 10 000 000 гривень!</p>
-            <span>00</span>
-            <span>230</span>
-            <span>025</span>
-            <a class="menu-btn" href="#">Зробити пожертву</a>
+            <p class="way-text-meta">Наша мета 10 000 000 гривень!</p>
+            <p class="way-text-count">00<span class="way-text-span"> | </span>230<span class="way-text-span"> | </span>025</p>
+            <button class="menu-btn btn" type="button">Зробити пожертву</и>
           </div>
         </div>
       </section>
@@ -190,9 +190,12 @@
         <div class="footer-contacts">
           <h2 class="title footer-title">Контакти</h2>
           <div class="footer-contacts-wrap">
+            <a href="#"><img class="footer-icon" src="./images/icon-phone.png" alt="Іконка телефону"></a>
             <p class="footer-text">
-              Якщо у вас виникають питання – телефонуйте за номером <a href="tel:+0987654321">0-987-654-321</a>
-            </p>
+            Якщо у вас виникають питання – телефонуйте за номером <a class="footer-link" href="tel:+0987654321">0-987-654-321</a>
+          </p>
+          <a href="#"><img class="footer-icon" src="./images/icon-tg.png" alt="Іконка телеграму"></a>
+          <a href="#"><img class="footer-icon" src="./images/icon-wu.png" alt="Іконка вотсапу"></a>
             <p class="footer-text">Або пишіть нам у чат-бот</p>
           </div>
         </div>
@@ -200,11 +203,12 @@
           <img src="./images/footer-mail.png" alt="Коверт" width="508" height="348">
           <form class="footer-form">
             <p class="footer-form-text">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
-            <input class="footer-form-input" type="text" name="" id="" placeholder="Ім’я">
-            <input class="footer-form-input" type="email" name="" id="" placeholder="Емейл">
+            <input class="footer-form-input" type="text" name="user-name" id="user-email" placeholder="Ім’я" required>
+            <input class="footer-form-input" type="email" name="user-email" id="user-email" placeholder="Емейл" required>
             <button class="menu-btn" type="submit">Підписатися</button>
           </form>
         </div>
+        <img class="footer-img" src="./images/footer-bg.png" alt="Декор сторінки" >
       </div>
     </footer>
   </body>
